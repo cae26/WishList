@@ -22,11 +22,14 @@ class WishListAdapter (private val items: List<Item>) : RecyclerView.Adapter<Wis
             itemTextView = itemView.findViewById(R.id.itemText)
             urlTextView = itemView.findViewById(R.id.urlText)
             priceTextView = itemView.findViewById(R.id.priceText)
+            //itemView.setOnClickListener(this)
         }
 
 
 
+
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         val context = parent.context
