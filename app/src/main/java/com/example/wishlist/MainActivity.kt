@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
 
         submitButton.setOnClickListener {
-            wishlists.add(Item(itemNameText.text.toString(),priceText.text.toString(),webAddressText.text.toString()))
+            wishlists.add(Item(itemNameText.text.toString(),webAddressText.text.toString(),"$"+priceText.text.toString()))
 
             itemNameText.onEditorAction(EditorInfo.IME_ACTION_DONE)
             priceText.onEditorAction(EditorInfo.IME_ACTION_DONE)
