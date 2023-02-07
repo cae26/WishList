@@ -3,6 +3,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wishlist.Item
 import com.example.wishlist.R
@@ -22,9 +23,8 @@ class WishListAdapter (private val items: List<Item>) : RecyclerView.Adapter<Wis
             itemTextView = itemView.findViewById(R.id.itemText)
             urlTextView = itemView.findViewById(R.id.urlText)
             priceTextView = itemView.findViewById(R.id.priceText)
-            //itemView.setOnClickListener(this)
-        }
 
+        }
 
 
 
@@ -56,6 +56,8 @@ class WishListAdapter (private val items: List<Item>) : RecyclerView.Adapter<Wis
         holder.urlTextView.text = item.webLink
         holder.priceTextView.text = item.price
     }
+
+
 
 
 

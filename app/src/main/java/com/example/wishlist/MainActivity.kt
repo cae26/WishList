@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.inputmethod.EditorInfo
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -39,6 +40,8 @@ class MainActivity : AppCompatActivity() {
             itemNameText.text = null
             priceText.text = null
             webAddressText.text = null
+
+            Toast.makeText(getApplicationContext(), "Item Added to WishList", Toast.LENGTH_SHORT).show();
 
             adapter.notifyDataSetChanged()
 
